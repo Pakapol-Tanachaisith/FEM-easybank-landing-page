@@ -10,7 +10,7 @@ const navLinks = ["Home", "About", "Contact", "Blog", "Careers"];
 <template>
   <header class="bg-white">
     <SectionContainer
-      class="flex items-center justify-between h-20 px-6 md:px-12"
+      class="flex items-center justify-between h-20 px-8 md:px-16"
     >
       <img src="/logo.svg" alt="logo" />
 
