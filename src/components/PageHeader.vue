@@ -1,5 +1,8 @@
 <script setup>
 import SectionContainer from "@/components/SectionContainer.vue";
+import { useMobileNavigation } from "@/stores/mobileNavigation";
+
+const mobileNav = useMobileNavigation();
 
 const navLinks = ["Home", "About", "Contact", "Blog", "Careers"];
 </script>
@@ -7,17 +10,17 @@ const navLinks = ["Home", "About", "Contact", "Blog", "Careers"];
 <template>
   <header class="bg-white">
     <SectionContainer
-      class="flex h-20 justify-between items-center px-6 md:px-12"
+      class="flex items-center justify-between h-20 px-6 md:px-12"
     >
       <img src="/logo.svg" alt="logo" />
 
       <nav
         aria-label="main navigation"
-        class="hidden md:flex h-full gap-x-8 items-stretch text-neutral-400"
+        class="items-stretch hidden h-full md:flex gap-x-8 text-neutral-400"
       >
         <a
           href="/"
-          class="flex items-center hover:text-neutral-700 border-b-2 border-b-transparent hover:border-b-green-500"
+          class="flex items-center border-b-2 hover:text-neutral-700 border-b-transparent hover:border-b-green-500"
           v-for="navLink in navLinks"
           :key="navLink"
           >{{ navLink }}</a
@@ -25,12 +28,25 @@ const navLinks = ["Home", "About", "Contact", "Blog", "Careers"];
       </nav>
 
       <button
-        class="bg-gradient-to-r hidden md:block from-lime-500 font-medium to-cyan-500 text-white px-6 py-2 rounded-full"
+        class="hidden px-6 py-2 font-medium text-white rounded-full bg-gradient-to-r md:block from-lime-500 to-cyan-500"
       >
         Request Invite
       </button>
 
-      <button class="md:hidden" aria-label="open mobile navigation">
+      <button
+        v-if="mobileNav.isOpen"
+        @click="mobileNav.onClose"
+        class="md:hidden"
+        aria-label="close mobile navigation"
+      >
+        <img src="/icon-close.svg" aria-hidden="true" alt="" />
+      </button>
+      <button
+        v-else
+        @click="mobileNav.onOpen"
+        class="md:hidden"
+        aria-label="open mobile navigation"
+      >
         <img src="/icon-hamburger.svg" aria-hidden="true" alt="" />
       </button>
     </SectionContainer>
