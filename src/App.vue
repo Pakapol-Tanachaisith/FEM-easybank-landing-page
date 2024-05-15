@@ -1,3 +1,7 @@
+<script setup>
+import PageHeader from "@/components/PageHeader.vue";
+</script>
+
 <template>
-  <h1 class="text-5xl">Hello World!</h1>
+  <PageHeader />
 </template>
