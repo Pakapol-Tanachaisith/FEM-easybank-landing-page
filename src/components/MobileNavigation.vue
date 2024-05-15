@@ -22,13 +22,13 @@ onUnmounted(() => {
 
 <template>
   <Transition>
-    <div v-if="mobileNav.isOpen" class="fixed inset-0 top-20 md:hidden">
+    <div v-if="mobileNav.isOpen" class="fixed inset-0 z-20 top-20 md:hidden">
       <div
         @click="mobileNav.onClose"
-        class="absolute inset-0 bg-black/75 -z-10"
+        class="absolute inset-0 bg-black/75"
       ></div>
       <nav
-        class="bg-white w-[90%] mx-auto mt-6 px-6 py-8 rounded-md flex flex-col items-center gap-y-6"
+        class="bg-white absolute left-1/2 -translate-x-1/2 z-50 w-[90%] mx-auto mt-6 px-6 py-8 rounded-md flex flex-col items-center gap-y-6"
       >
         <a
           href="/"
