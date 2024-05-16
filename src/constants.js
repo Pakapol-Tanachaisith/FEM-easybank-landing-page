@@ -28,3 +28,30 @@ export const LATEST_ARTICLES = [
     After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...`,
   },
 ];
+
+export const FEATURES = [
+  {
+    title: `Online Banking`,
+    desc: `Our modern web and mobile applications allow you to keep track of your finances 
+  wherever you are in the world.`,
+    icon: `/icon-online.svg`,
+  },
+  {
+    title: `Simple Budgeting`,
+    desc: `See exactly where your money goes each month. Receive notifications when you’re 
+  close to hitting your limits.`,
+    icon: `/icon-budgeting.svg`,
+  },
+  {
+    title: `Fast Onboarding`,
+    desc: `We don’t do branches. Open your account in minutes online and start taking control 
+  of your finances right away.`,
+    icon: `/icon-onboarding.svg`,
+  },
+  {
+    title: `Open API`,
+    desc: `Manage your savings, investments, pension, and much more from one account. Tracking 
+  your money has never been easier.`,
+    icon: `/icon-api.svg`,
+  },
+];
