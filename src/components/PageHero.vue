@@ -1,10 +1,10 @@
 <script setup>
-import SectionContainer from "@/components/SectionContainer.vue";
+import ContainerVue from "@/components/ContainerVue.vue";
 </script>
 
 <template>
   <section class="bg-neutral-50">
-    <SectionContainer class="relative overflow-hidden">
+    <ContainerVue class="relative overflow-hidden">
       <img class="w-full md:hidden" src="/bg-intro-mobile.svg" alt="" />
       <img
         class="absolute right-[-40%] top-[-50%] hidden w-full md:block"
@@ -33,6 +33,6 @@ import SectionContainer from "@/components/SectionContainer.vue";
           Request Invite
         </button>
       </article>
-    </SectionContainer>
+    </ContainerVue>
   </section>
 </template>

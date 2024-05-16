@@ -1,12 +1,12 @@
 <script setup>
 import { LATEST_ARTICLES } from "@/constants";
-import SectionContainer from "@/components/SectionContainer.vue";
+import ContainerVue from "@/components/ContainerVue.vue";
 import ArticleItem from "@/components/ArticleItem.vue";
 </script>
 
 <template>
   <section class="bg-neutral-50">
-    <SectionContainer class="px-8 py-16 lg:p-24">
+    <ContainerVue class="px-8 py-16 lg:p-24">
       <h2 class="text-4xl text-center lg:text-left text-neutral-900">
         Latest Articles
       </h2>
@@ -15,6 +15,6 @@ import ArticleItem from "@/components/ArticleItem.vue";
           <ArticleItem v-bind="article" />
         </li>
       </ul>
-    </SectionContainer>
+    </ContainerVue>
   </section>
 </template>

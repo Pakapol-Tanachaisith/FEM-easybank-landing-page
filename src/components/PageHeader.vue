@@ -1,5 +1,5 @@
 <script setup>
-import SectionContainer from "@/components/SectionContainer.vue";
+import ContainerVue from "@/components/ContainerVue.vue";
 import { useMobileNavigation } from "@/stores/mobileNavigation";
 
 const mobileNav = useMobileNavigation();
@@ -9,9 +9,7 @@ const navLinks = ["Home", "About", "Contact", "Blog", "Careers"];
 
 <template>
   <header class="bg-white">
-    <SectionContainer
-      class="flex items-center justify-between h-20 px-8 md:px-16"
-    >
+    <ContainerVue class="flex items-center justify-between h-20 px-8 md:px-16">
       <img src="/logo.svg" alt="logo" />
 
       <nav
@@ -49,6 +47,6 @@ const navLinks = ["Home", "About", "Contact", "Blog", "Careers"];
       >
         <img src="/icon-hamburger.svg" aria-hidden="true" alt="" />
       </button>
-    </SectionContainer>
+    </ContainerVue>
   </header>
 </template>

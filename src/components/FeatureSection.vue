@@ -1,12 +1,12 @@
 <script setup>
-import SectionContainer from "@/components/SectionContainer.vue";
+import ContainerVue from "@/components/ContainerVue.vue";
 import FeatureItem from "@/components/FeatureItem.vue";
 import { FEATURES } from "@/constants";
 </script>
 
 <template>
   <section class="bg-neutral-100">
-    <SectionContainer class="px-8 py-16 lg:p-24">
+    <ContainerVue class="px-8 py-16 lg:p-24">
       <article class="text-center lg:text-left">
         <h2 class="w-3/4 mx-auto text-4xl lg:mx-0 text-neutral-900">
           Why choose Easybank?
@@ -21,6 +21,6 @@ import { FEATURES } from "@/constants";
           <FeatureItem v-bind="feature" />
         </li>
       </ul>
-    </SectionContainer>
+    </ContainerVue>
   </section>
 </template>
