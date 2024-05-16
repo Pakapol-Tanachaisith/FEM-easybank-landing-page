@@ -4,6 +4,7 @@ import MobileNavigation from "@/components/MobileNavigation.vue";
 import PageHero from "@/components/PageHero.vue";
 import FeatureSection from "@/components/FeatureSection.vue";
 import LatestArticles from "@/components/LatestArticles.vue";
+import PageFooter from "@/components/PageFooter.vue";
 </script>
 
 <template>
@@ -12,4 +13,5 @@ import LatestArticles from "@/components/LatestArticles.vue";
   <PageHero />
   <FeatureSection />
   <LatestArticles />
+  <PageFooter />
 </template>

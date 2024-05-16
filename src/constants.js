@@ -55,3 +55,31 @@ export const FEATURES = [
     icon: `/icon-api.svg`,
   },
 ];
+
+export const SOCIAL_LINKS = [
+  {
+    alt: "Facebook",
+    icon: "/icon-facebook.svg",
+    href: "https://www.facebook.com/",
+  },
+  {
+    alt: "Youtube",
+    icon: "/icon-youtube.svg",
+    href: "https://www.youtube.com/",
+  },
+  {
+    alt: "Twitter",
+    icon: "/icon-twitter.svg",
+    href: "https://www.twitter.com/",
+  },
+  {
+    alt: "Pinterest",
+    icon: "/icon-pinterest.svg",
+    href: "https://www.pinterest.com/",
+  },
+  {
+    alt: "Instagram",
+    icon: "/icon-instagram.svg",
+    href: "https://www.instagram.com/",
+  },
+];
